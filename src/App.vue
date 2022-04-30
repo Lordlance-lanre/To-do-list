@@ -1,16 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>{{ title }}</h1>
+  <Inputbox />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Inputbox from './components/Inputbox.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: { Inputbox },
+  data() {
+    return {
+      title: 'To do list App'
+    }
   }
+
 }
 </script>
 
